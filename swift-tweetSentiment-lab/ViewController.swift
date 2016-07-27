@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  @IBOutlet weak var polarityScoreLabel: UILabel!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    @IBOutlet weak var polarityScoreLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-                
+    DataStore.sharedDataStore.averagePolarityScoreForSearchTerm("FlatironSchool") { average in
+      
+      print(average)
+      dispatch_async(dispatch_get_main_queue(), { 
+        self.polarityScoreLabel.text = "\(average)"
+      })
+      
     }
+    
+  }
 }
 

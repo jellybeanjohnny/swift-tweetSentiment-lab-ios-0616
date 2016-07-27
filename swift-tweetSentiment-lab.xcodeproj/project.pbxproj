@@ -22,6 +22,10 @@
 		3DD9864B1D442AD300E6E776 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD9864A1D442AD300E6E776 /* Accounts.framework */; };
 		7F244C7A6F747F1D52E31AFF /* Pods_swift_tweetSentiment_labUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BDBAE7EC52B032C13FAAFD /* Pods_swift_tweetSentiment_labUITests.framework */; };
 		84C568866FAFEC99C477408E /* Pods_swift_tweetSentiment_lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AED71284CF220AF0F0B21E2D /* Pods_swift_tweetSentiment_lab.framework */; };
+		C90929D41D49278600D854D2 /* TwitterAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90929D31D49278600D854D2 /* TwitterAPIClient.swift */; };
+		C90929D61D492A9D00D854D2 /* PrivateKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90929D51D492A9D00D854D2 /* PrivateKeys.swift */; };
+		C90929D81D49341000D854D2 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90929D71D49341000D854D2 /* DataStore.swift */; };
+		C90929DA1D49371000D854D2 /* TweetSentimentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90929D91D49371000D854D2 /* TweetSentimentAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,11 @@
 		921F28374FD6B8DED65FA84F /* Pods_swift_tweetSentiment_labTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_tweetSentiment_labTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABEA82D1DFCF2D631EFF092E /* Pods-swift-tweetSentiment-labUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-tweetSentiment-labUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-tweetSentiment-labUITests/Pods-swift-tweetSentiment-labUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AED71284CF220AF0F0B21E2D /* Pods_swift_tweetSentiment_lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_tweetSentiment_lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90929D31D49278600D854D2 /* TwitterAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPIClient.swift; sourceTree = "<group>"; };
+		C90929D51D492A9D00D854D2 /* PrivateKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKeys.swift; sourceTree = "<group>"; };
+		C90929D71D49341000D854D2 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		C90929D91D49371000D854D2 /* TweetSentimentAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetSentimentAPIClient.swift; sourceTree = "<group>"; };
+		C90929DB1D49412E00D854D2 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		DBF425E3AFA3C7E6283086D3 /* Pods-swift-tweetSentiment-labTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-tweetSentiment-labTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-tweetSentiment-labTests/Pods-swift-tweetSentiment-labTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +132,9 @@
 				066F793DCBB6439AACAF64C4 /* Pods */,
 				4FB5C82F2BFE2D4FFFE23B21 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		3DD986121D44263900E6E776 /* Products */ = {
 			isa = PBXGroup;
@@ -140,10 +151,15 @@
 			children = (
 				3DD986141D44263900E6E776 /* AppDelegate.swift */,
 				3DD986161D44263900E6E776 /* ViewController.swift */,
+				C90929DB1D49412E00D854D2 /* MyPlayground.playground */,
 				3DD986181D44263900E6E776 /* Main.storyboard */,
 				3DD9861B1D44263A00E6E776 /* Assets.xcassets */,
 				3DD9861D1D44263A00E6E776 /* LaunchScreen.storyboard */,
 				3DD986201D44263A00E6E776 /* Info.plist */,
+				C90929D31D49278600D854D2 /* TwitterAPIClient.swift */,
+				C90929D91D49371000D854D2 /* TweetSentimentAPIClient.swift */,
+				C90929D71D49341000D854D2 /* DataStore.swift */,
+				C90929D51D492A9D00D854D2 /* PrivateKeys.swift */,
 			);
 			path = "swift-tweetSentiment-lab";
 			sourceTree = "<group>";
@@ -574,6 +590,10 @@
 			files = (
 				3DD986171D44263900E6E776 /* ViewController.swift in Sources */,
 				3DD986151D44263900E6E776 /* AppDelegate.swift in Sources */,
+				C90929D41D49278600D854D2 /* TwitterAPIClient.swift in Sources */,
+				C90929DA1D49371000D854D2 /* TweetSentimentAPIClient.swift in Sources */,
+				C90929D81D49341000D854D2 /* DataStore.swift in Sources */,
+				C90929D61D492A9D00D854D2 /* PrivateKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
